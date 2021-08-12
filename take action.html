@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Vaccinations Importance</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <header> 
+    <div class="flex-container">
+      <div><h1>Take Action</h1></div>
+      <div><img class="icon" src="assets/virus.png"></div>
+    </div>
+  </header>
+ 
+  
+  <body>
+    <!--This is my nav bar, it is on every page-->
+    <ul class="sticky">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="myths.html">Common Myths</a></li>
+      <li style="float:right"><a id = "takeAction" href="take action.html">Take Action</a></li>
+    </ul>
+
+
+    
+    <center><h2 id="checklist"> Things you can do to TAKE ACTION!</h2></center>
+
+    <!--This is the checklist section where you can tick off boxes as you complete them-->
+
+    <div>
+      <div class="checkItem">
+        <label>Make sure you're up to date with vaccinations</label>
+        <input type="checkbox">
+      </div>
+      <p> (this is really helpful as it helps protect others as well as yourself!)<p>
+
+      <div class="checkItem">
+        <label>Donate to the NHS </label>
+        <input type="checkbox">
+      </div>
+      <p>(the NHS help to keep us all safe and provide healthcare to all)</p>
+
+      <div class="checkItem">
+        <label>Spread the word!</label>
+        <input type="checkbox">
+      </div>
+      <p>(the best way to protect everyone is to make sure everyone is vaccinated. This means we need everyone to be well-informed)
+    </div>
+
+    <br>
+    
+    <!--This part is made interactive by JavaScript and allows the user to personalise a pledge-->
+    <center><h2 id ="pledget">Personalise your pledge!</h2></center>
+    <center><p>Here you can personalise a pledge that you will help ensure the good health of others by supporting vaccine takeup! Simply enter your name below and how you intend to help, then hit the <i>'generate pledge'</i> button.</p></center>
+
+    <div class="scriptQues">
+      <div class="scriptItem">
+        <label for="yourName">Your name: </label>
+        <input type="text" id="name">
+      </div>
+
+      <br>
+
+      <div class="scriptItem">
+        <label for="yourIdeas">Enter a few ideas on how to help. You can look at the checklist above for some ideas</label>
+        <input type="text" id="ideas">
+      </div>
+    </div>
+
+    <br>
+
+    <button id ="scriptBtn">Generate pledge</button>
+
+    <p id="scriptReturned"></p>
+
+    <p id="pledgeSigned"></p>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
