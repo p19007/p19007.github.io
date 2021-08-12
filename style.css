@@ -186,6 +186,8 @@ background-color: #9effcb;
 
 h2 {
   font-family: Balsamiq Sans;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .checkItem {
@@ -248,4 +250,9 @@ whatV {
   margin-left: 20px;
   margin-right: 20px;
   font-family: Balsamiq Sans;
+}
+
+.covid {
+  padding: 14px 16px;
+  background-color: #ffc2e9;
 }
